@@ -1,32 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: se.nackademin.MagicNumberTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.41 sec <<< FAILURE! - in se.nackademin.MagicNumberTest
-testCDependsOnName(se.nackademin.MagicNumberTest)  Time elapsed: 0.012 sec  <<< FAILURE!
-java.lang.AssertionError: C should provide different values for different names. Actual: 0
-	at se.nackademin.MagicNumberTest.testCDependsOnName(MagicNumberTest.java:115)
-
-testCDependsOnHeight(se.nackademin.MagicNumberTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: C should provide different values for different heights. Actual: 0
-	at se.nackademin.MagicNumberTest.testCDependsOnHeight(MagicNumberTest.java:97)
-
-testCDependsOnAge(se.nackademin.MagicNumberTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: C should provide different values for different ages. Actual: 0
-	at se.nackademin.MagicNumberTest.testCDependsOnAge(MagicNumberTest.java:106)
-
-testC(se.nackademin.MagicNumberTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: C is not calculated correctly expected:<2> but was:<0>
-	at se.nackademin.MagicNumberTest.testC(MagicNumberTest.java:34)
-
-testD(se.nackademin.MagicNumberTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: D is not calculated correctly expected:<6> but was:<0>
-	at se.nackademin.MagicNumberTest.testD(MagicNumberTest.java:40)
-
-testE(se.nackademin.MagicNumberTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: E is not calculated correctly expected:<9> but was:<0>
-	at se.nackademin.MagicNumberTest.testE(MagicNumberTest.java:52)
-
-testDWithAGreaterThan5(se.nackademin.MagicNumberTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: D is not calculated correctly expected:<9> but was:<0>
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.29 sec <<< FAILURE! - in se.nackademin.MagicNumberTest
+testDWithAGreaterThan5(se.nackademin.MagicNumberTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: D is not calculated correctly expected:<9> but was:<3>
 	at se.nackademin.MagicNumberTest.testDWithAGreaterThan5(MagicNumberTest.java:46)
 

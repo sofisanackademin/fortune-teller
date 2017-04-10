@@ -42,18 +42,43 @@ public class MagicNumbers {
     }
 
     public int calculateC() {
-        //TODO: calculate C
-        return 0;
+        int cVärde = calculateA() + calculateB() - height;
+        
+        while(cVärde<=0) {
+            cVärde = cVärde + 10;
+        }
+        return cVärde;
     }
 
     public int calculateD() {
-        //TODO: calculate D
-        return 0;
+        int dVärde = calculateA();
+        
+        if(dVärde>5) {
+            dVärde = dVärde + calculateB();
+        } else {
+            dVärde = dVärde + calculateC();
+        }
+        
+        dVärde = dVärde - income;
+        
+        while(dVärde<=0) {
+            dVärde = dVärde + 10;
+        }
+
+        return dVärde;
     }
 
     public int calculateE() {
-        //TODO: calculate E
-        return 0;
+        long eVärde = age * income * income * height;
+        
+        double eVärdeDouble = Math.sqrt(eVärde); 
+        eVärde = Math.round(eVärdeDouble); //Avrunda här
+                
+        while(eVärde>=10) {
+            eVärde = eVärde/2;
+        }
+        
+        return (int)eVärde;
     }
 
     public void setName(String name) {
