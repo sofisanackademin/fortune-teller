@@ -9,8 +9,24 @@ public class MagicNumbers {
     private int height;
 
     public int calculateA() {
-        //TODO: calculate A
-        return 0;
+        int mellanslagPosition = 0;
+        int mellanslagRäknare = 0;
+        int aVärde = 0;
+        while(mellanslagPosition>=0) {
+            mellanslagPosition = name.indexOf(' ', mellanslagPosition);
+            if(mellanslagPosition>=0) {
+                mellanslagRäknare++;
+                mellanslagPosition++;
+            }
+        }
+        
+        aVärde = mellanslagRäknare + 1 + age;
+    
+        while(aVärde>=10) {
+            aVärde = aVärde - 7;
+        }
+        
+        return aVärde;
     }
 
     public int calculateB() {
