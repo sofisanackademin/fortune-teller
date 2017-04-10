@@ -17,8 +17,15 @@ public class FortuneTeller {
      *
      */
     public String calculate() {
-        //TODO: Implement
-        return "Not implemented!";
+        Translator t = new Translator();
+        t.setA(magicNumbers.calculateA());
+        t.setB(magicNumbers.calculateB());
+        t.setC(magicNumbers.calculateC());
+        t.setD(magicNumbers.calculateD());
+        t.setE(magicNumbers.calculateE());
+        
+        return t.skapaSpådom();
+        
     }
 
     public static void main(String[] args) {
