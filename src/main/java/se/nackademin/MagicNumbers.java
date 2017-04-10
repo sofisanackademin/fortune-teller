@@ -30,8 +30,15 @@ public class MagicNumbers {
     }
 
     public int calculateB() {
-        //TODO: calculate B
-        return 0;
+        int bVärde = location.length();
+        
+        bVärde = bVärde + income;
+        
+        while(bVärde>=10) {
+            bVärde = bVärde - 7;
+        }
+        
+        return bVärde;
     }
 
     public int calculateC() {
